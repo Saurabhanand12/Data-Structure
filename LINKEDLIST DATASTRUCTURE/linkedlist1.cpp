@@ -1,3 +1,5 @@
+// first linked list class 
+
 // //LINKED LIST 
 // #include<iostream>
 // using namespace std;
@@ -178,3 +180,5 @@
 
 // return 0;
 // }
+
+
