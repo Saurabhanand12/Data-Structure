@@ -24,7 +24,7 @@
 //     ListNode* middleNode(ListNode* head) {
 //         ListNode* slow = head;                                     //slow traverse one step and fast two steps
 //         ListNode* fast = head;
-//         while(fast != NULL && fast->next != NULL){
+//         while(fast != NULL && fast->next != NULL){             //Time: O(n)
 //             slow = slow->next;
 //             fast = fast->next->next;
 //         }
@@ -126,7 +126,7 @@
 // public:
 //     bool hasCycle(ListNode *head) {
 //         ListNode* slow = head;                                   
-//         ListNode* fast = head;
+//         ListNode* fast = head;                                    TC = O(n) sp= O(1)
 //         while(fast != NULL && fast->next != NULL){
 //             slow = slow->next;
 //             fast = fast->next->next;
