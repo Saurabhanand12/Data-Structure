@@ -5,7 +5,7 @@
 //         ListNode* slow = head ;
 //         ListNode* fast = head ;
 //         bool flag = false;
-//         while(fast != NULL && fast->next != NULL){
+//         while(fast != NULL && fast->next != NULL){              //Tc = O(n) sp = O(1)
 //             slow = slow->next;
 //             fast = fast->next->next;
 //             if(slow == fast){
@@ -32,8 +32,8 @@
 //         if(head == NULL || head ->next ==NULL) return head;
 //         ListNode* a = head;
 //         ListNode* b = head->next;
-//         while(b!= NULL){
-//             while(b!= NULL && b->val==a->val){
+//         while(b!= NULL){       
+//             while(b!= NULL && b->val==a->val){          //Tc = O(n) sp = O(1)
 //                 b = b->next;
 //             }
 //             a->next = b;
@@ -56,7 +56,7 @@
 //         while(temp != NULL){
 //             if(temp->next == NULL)  tail = temp;
 //             temp = temp-> next;
-//             n++;
+//             n++;                                  //Tc = O(n) sp = O(1)
 //         }
 //         k=k%n;
 //         if(k==0) return head;

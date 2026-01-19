@@ -45,7 +45,7 @@
 //             temp = temp->next;
 //         } 
 //         if(n == len){
-//             head = head ->next;            // first method
+//             head = head ->next;            // first method   //Time: O(n)
 //             return head;
 //         }
 //         int m = len-n+1;
@@ -66,7 +66,7 @@
 //         ListNode*  fast = head;
 //         // traverse fast to (n+1) steps
 //         for(int i=1;i<=n+1;i++){
-//             if(fast == NULL ) return head ->next;
+//             if(fast == NULL ) return head ->next;     //Time: O(n)
 //             fast = fast->next;
 //         }
 //         while(fast != NULL){                               
@@ -94,7 +94,7 @@
 //             lenB++;
 //             tempB = tempB->next;
 //         }
-//         tempA = headA;
+//         tempA = headA;                                                //Time: O(n)
 //         tempB = headB;
 //         if(lenA > lenB){
 //             int diff = lenA - lenB;
@@ -134,4 +134,4 @@
 //         }
 //         return false;  
 //     }
-// };
+// }; 

@@ -136,7 +136,7 @@
 //     }
 
 //     void insertatidx(int idx,int data){
-//         if(idx<0 ||idx > size) cout<<"invalid index"<<endl;
+//         if(idx<0 || idx > size) cout<<"invalid index"<<endl;
 //         else if(idx == 0) insertathead(data);
 //         else if(idx == size) insertattail(data);
 //         else{
