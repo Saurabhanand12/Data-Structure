@@ -16,7 +16,7 @@
 //     // cout<<st.size()<<endl;
 //     // cout<<st.top()<<endl;
 
-//     //printing the stack   but this method stack is empty 
+//     //printing the stack   but this method stack is empty
 //     // while(st.size() > 0){
 //     //     cout<<st.top()<<" ";
 //     //     st.pop();
@@ -31,11 +31,11 @@
 //     }
 //     cout<<endl;
 
-//     while(temp.size() > 0){
-//         st.push(temp.top());
-//         temp.pop();
-//     }
-//     cout<<st.top()<<endl;
+    // while(temp.size() > 0){
+    //     st.push(temp.top());
+    //     temp.pop();
+    // }
+    // cout<<st.top()<<endl;
 
 // return 0;
 // }
@@ -134,47 +134,47 @@
 // return 0;
 // }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//PUSH AT A BOTTOM / AT ANY INDEX
-// #include<iostream>
-// #include<stack>
-// using namespace std;
-// void printstack(stack<int>& st){
-//     stack<int> t;
-//     while(st.size() > 0){
-//         t.push(st.top());
-//         st.pop();
-//     }
-//     cout<<endl;
-//     while(t.size() > 0){
-//         cout<<t.top()<<" ";
-//         st.push(t.top());
-//         t.pop();
-//     }
-// }
-// void pushatbottom(stack<int>& st,int value){
-//     stack<int> temp;
-//     while(st.size()>0){
-//         temp.push(st.top());
-//         st.pop();
-//     }
-//     st.push(value);
-//     while(temp.size() >0){
-//         st.push(temp.top());
-//         temp.pop();
-//     }
-// }
-// void pushatidx(stack<int>& st,int idx,int value){
-//     stack<int> temp;
-//     while(st.size()> idx){
-//         temp.push(st.top());
-//         st.pop();
-//     }
-//     st.push(value);
-//     while(temp.size() >0){
-//         st.push(temp.top());
-//         temp.pop();
-//     }
-// }
+// PUSH AT A BOTTOM / AT ANY INDEX
+//  #include<iostream>
+//  #include<stack>
+//  using namespace std;
+//  void printstack(stack<int>& st){
+//      stack<int> t;
+//      while(st.size() > 0){
+//          t.push(st.top());
+//          st.pop();
+//      }
+//      cout<<endl;
+//      while(t.size() > 0){
+//          cout<<t.top()<<" ";
+//          st.push(t.top());
+//          t.pop();
+//      }
+//  }
+//  void pushatbottom(stack<int>& st,int value){
+//      stack<int> temp;
+//      while(st.size()>0){
+//          temp.push(st.top());
+//          st.pop();
+//      }
+//      st.push(value);
+//      while(temp.size() >0){
+//          st.push(temp.top());
+//          temp.pop();
+//      }
+//  }
+//  void pushatidx(stack<int>& st,int idx,int value){
+//      stack<int> temp;
+//      while(st.size()> idx){
+//          temp.push(st.top());
+//          st.pop();
+//      }
+//      st.push(value);
+//      while(temp.size() >0){
+//          st.push(temp.top());
+//          temp.pop();
+//      }
+//  }
 
 // int main() {
 //     stack<int> st;
@@ -192,24 +192,23 @@
 // return 0;
 // }
 ////////////////////////////////////
-// #include<iostream>
-// #include<stack>
+// #include <iostream>
+// #include <stack>
 // using namespace std;
-// void fun(int n) {
-// stack<int> s;
-// while (n > 0) {
-// s.push(n % 2);
-// n = n / 2;
+// void fun(int n){
+//     stack<int> s;
+//     while (n > 0){
+//         s.push(n % 2);
+//         n = n / 2;
+//     }
+//     while (!s.empty()){
+//         cout << s.top();
+//         s.pop();
+//     }
 // }
-// while (!s.empty()) {
-// cout << s.top();
-// s.pop();
-// }
-// }
-
-// int main() {
+// int main(){
 //     int n = 5;
 //     fun(5);
 
-// return 0;
+//     return 0;
 // }
