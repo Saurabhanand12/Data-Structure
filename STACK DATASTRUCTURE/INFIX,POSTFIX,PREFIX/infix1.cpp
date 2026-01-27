@@ -21,7 +21,7 @@
 //     stack<char> op;
 //     for(int i=0;i<s.size();i++){
 //         // by the using of asciee value
-//         if(s[i] >= 48 && s[i] <= 57){        // acsii val for 48 = 1 and 57 = 9
+//         if(s[i] >= 48 && s[i] <= 57){        // acsii val for 48 = 0 and 57 = 9
 //             val.push(s[i]-48);
 //         }
 //         else{

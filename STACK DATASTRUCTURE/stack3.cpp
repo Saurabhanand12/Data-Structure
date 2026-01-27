@@ -149,9 +149,9 @@
 //             st.pop();
 //         } 
 //         //mark the ans in ngi array
-//         if(st.size()==0) pgi[i] = -1;
-//         else pgi[i] = st.top();
-//         pgi[i] = i - pgi[i];//  minus pge indix with index of array
+//         if(st.size()==0) pgi[i] = i+1;
+//         else   pgi[i] = i - st.top();//  minus pge indix with index of array
+
 //         //push the arr[i]
 //         st.push(i); 
 //     }
