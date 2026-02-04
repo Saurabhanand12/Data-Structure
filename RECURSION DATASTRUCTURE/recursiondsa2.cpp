@@ -2,7 +2,7 @@
 // #include<iostream>
 // using namespace std;
 // int power(int a,int b){
-//     if(b == 0 ) return a;             // with recursion   TC=O(b) , SC = O(b) stack frame 
+//     if(b == 0 ) return 1;             // with recursion   TC=O(b) , SC = O(b) stack frame 
 //     return a*power(a,b-1);
 // }
 // int power1(int a,int b){

@@ -74,7 +74,7 @@
 //         for(int i=0;i<n;i++){
 //             int idx = q.front();
 //             q.pop();
-//             // popping front and pushin into a back
+//             // popping front and pushing into a back
 //             q.push(q.front());
 //             q.pop();
 //             ans[idx] = deck[i];

@@ -33,19 +33,15 @@
 // class Solution {
 // public:
 //     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-//         if (k == 1) return nums;  // Special case: If k = 1, each element is its own window max.
+//         if (k == 1) return nums;  
 //         int n = nums.size();
-//         deque<int> dq;  // Deque to store indices of elements in decreasing order
-//         vector<int> ans;  // Result vector to store the maximums for each window
+//         deque<int> dq; 
+//         vector<int> ans;  
 //         for (int i = 0; i < n; i++) {
-//             // Remove elements from the back of the deque if they are smaller than the current element
 //             while (!dq.empty() && nums[dq.back()] < nums[i])  dq.pop_back();
-//             // Push the current element's index to the deque
 //             dq.push_back(i);
-//             // Remove the element at the front of the deque if it's out of the current window
 //             int j = i - k + 1;
 //             while (!dq.empty() && dq.front() < j) dq.pop_front();
-//             // Once we have processed at least 'k' elements, the front of the deque is the max of the current window
 //             if (i >= k - 1) ans.push_back(nums[dq.front()]);
 //         }
 //         return ans;
@@ -94,3 +90,7 @@
 //         else return "Dire";
 //     }
 // };
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//ROTTEN ORANGE 994
+
