@@ -27,29 +27,28 @@
 
 //GENERATE BINARY
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-void generate(string s,int n){
-    if(n ==0){
-        cout<<s<<endl;
-        return;
-    }
-    generate(s+'0',n-1);
-    if(s == "" || s[s.length()-1] == '0') generate(s+'1',n-1);
+// void generate(string s,int n){
+//     if(n ==0){
+//         cout<<s<<endl;
+//         return;
+//     }
+//     generate(s+'0',n-1);
+//     if(s == "" || s[s.length()-1] == '0') generate(s+'1',n-1);
 
-}
+// }
 
-int main() {
-    int n=2;
-    generate("",n);
+// int main() {
+//     int n=2;
+//     generate("",n);
 
-return 0;
-}
+// return 0;
+// }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// COMBINATION SUM
+//// COMBINATION SUM
 
 // #include<iostream>
 // #include<vector>

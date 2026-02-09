@@ -1,3 +1,4 @@
+///////////////////////Generate all combinations of size K//// permutation of digit
 // #include<iostream>
 // #include<vector>
 // using namespace std;
@@ -85,7 +86,6 @@
 // }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 //PALINDROME NUMBER 
 //EXAMPLE DAD,RACECAR 
 
@@ -108,8 +108,6 @@
 //     else  return palindrome(s,i+1,j-1);
     
 // }
-
-
 // int main() {
 //     string s = "racecar";
 //     int n= s.size();
