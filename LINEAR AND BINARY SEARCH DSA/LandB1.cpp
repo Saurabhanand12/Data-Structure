@@ -121,7 +121,7 @@
 //         int mid = low + (high - low) /2;          //for upper bound
 //         if(arr[mid] == x) {
 //         flag = true;
-//         cout<<arr[mid];
+//         cout<<mid;
 //         break;
 //         } 
 //         else if(arr[mid] < x) {               //TC = O(LOG n)

@@ -5,7 +5,7 @@
 //     int arr[] = {1,2,2,3,3,3,3,3,4,4,5,5,9};
 //     int n = 13;
 //     int x;
-//     cout<<"Enter the value of x: "<<endl;
+//     cout<<"Enter the value of x: "<<" ";
 //     cin>>x;
 //     int low = 0;
 //     int high = n-1;
@@ -29,14 +29,14 @@
 // return 0;
 // }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//SMALLEST MISSING ELEMENT IN THE ARRAY
+//////SMALLEST MISSING ELEMENT IN THE ARRAY
 // #include<iostream>
 // using namespace std;
 // int main() {
 //     int arr[] = {0,1,2,3,4,8,9,12};
 //     int n = 8;
 //     for(int i=0;i<n;i++){
-//         if(i != arr[i]){                 // LINEAR SEARCH
+//         if(i != arr[i]){                                             // using LINEAR SEARCH
 //            cout<<"number of smallest missing element are :"<<i<<endl;
 //                break;
 //         }
@@ -53,7 +53,7 @@
 //     int high = n-1;
 //     int ans =-1;
 //     while(low<=high){
-//         int mid = low + (high - low)/2;
+//         int mid = low + (high - low)/2;              //Using Binary Search 
 //         if(arr[mid] == mid) low = mid +1;
 //         else{
 //             ans = mid;
@@ -64,7 +64,7 @@
 // return 0;
 // }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// square  of the numbers
+///////square  of the numbers
 // #include<iostream>
 // using namespace std;
 // int main() {
@@ -88,7 +88,7 @@
 // return 0; 
 // }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// peak index in mountain array
+///////// peak index in mountain array
 // #include<iostream>
 // using namespace std;
 
