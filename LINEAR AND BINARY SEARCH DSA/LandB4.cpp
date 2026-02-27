@@ -1,4 +1,4 @@
-//                      SUM OF SQUARE NUMBERS 
+/////////////////////////////////SUM OF SQUARE NUMBERS 
 // class Solution {
 // public:
 //     bool isperfectsquare(int n){
@@ -19,17 +19,13 @@
 //             else{
 //                 x=((int)sqrt(x)+1)*((int)sqrt(x)+1);
 //                 y=c-x;
-//             }
-           
+//             }          
 //         }
-//         return false;
-        
+//         return false;     
 //     }
 // };
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//CAPACITY TO SHIP PACKAGES WITHIN D DAYS
-
+/////////////////////////////CAPACITY TO SHIP PACKAGES WITHIN D DAYS
 // class Solution {
 // public:
 //     bool check(int mid,vector<int>& weights, int days){
@@ -70,13 +66,11 @@
 //                 low = mid + 1;
 //             }
 //         }
-//         return mincapacity;
-        
+//         return mincapacity;     
 //     }
 // };
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// KOKO EATING BANANAS
+///////////////////////////////// KOKO EATING BANANAS
 // class Solution {
 // public:
 //     bool check(int speed ,vector<int>& piles, int h){
@@ -91,33 +85,30 @@
 //         if(count>h) return false;
 //         else return true;
 //     }
-
-//     int minEatingSpeed(vector<int>& piles, int h) {
-        // int n= piles.size();
-        // int mx = -1;
-        // for(int i=0;i<n;i++){
-        //     mx = max(mx,piles[i]);
-        // }
-        // int low = 1;
-        // int high = mx;
-        // int ans =-1;
-        // while(low<=high){
-        //     int mid = low + (high - low)/2;
-        //     if(check(mid,piles,h) == true){
-        //         ans = mid;
-        //         high = mid -1;
-        //     }
-        //     else {
-        //         low = mid + 1;
-        //     }
-        // }  
-        // return ans;   
+// int minEatingSpeed(vector<int>& piles, int h) {
+// int n= piles.size();
+// int mx = -1;
+// for(int i=0;i<n;i++){
+//         mx = max(mx,piles[i]);
+// }
+// int low = 1;
+// int high = mx;
+// int ans =-1;
+// while(low<=high){
+//         int mid = low + (high - low)/2;
+//         if(check(mid,piles,h) == true){
+//         ans = mid;
+//         high = mid -1;
+//         }
+//         else {
+//         low = mid + 1;
+//         }
+// }  
+// return ans;   
 //     }
 // };
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// MINIMUM TIME TO COMPLETE TRIP
+////////////////////////////////////////// MINIMUM TIME TO COMPLETE TRIP
 // class Solution {
 // public:
 //     bool check(long long mid,vector<int>& time, int totalTrips){
