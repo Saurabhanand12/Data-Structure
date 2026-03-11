@@ -1,3 +1,4 @@
+// /////// DFS Traversal
 // #include<iostream>
 // #include<climits>
 // using namespace std;
@@ -31,8 +32,11 @@
 //     cout<<root->val<<" ";
 // }
 // void nthlevel(node* root,int curr,int level){
-//     if(root == NULL ) return ;
-//     if(curr == level)  cout<<root->val<<" ";
+//     if(root == NULL) return;
+//     if(curr == level){
+//         cout<<root->val<<" ";
+//         return;
+//     }
 //     nthlevel(root->left,curr+1,level);
 //     nthlevel(root->right,curr+1,level);
 // }
@@ -53,12 +57,12 @@
 //     c->left = f; 
 //     c->right = g;
 
-    // preorder(a);
-    // cout<<endl;
-    // inorder(a);
-    // cout<<endl;
-    // postorder(a);
-    // cout<<endl;
+//     preorder(a);
+//     cout<<endl;
+//     inorder(a);
+//     cout<<endl;
+//     postorder(a);
+//     cout<<endl;
 //     nthlevel(a,1,3);
 //     cout<<endl;
 
@@ -109,18 +113,6 @@
 //         cout<<endl;
 //     }
 // }
-// void levelorderqueue(node* root){       // BFS  //VIMP
-//     queue<node*> q;
-//     q.push(root);
-//     while(q.size() > 0){
-//         node* temp = q.front();
-//         q.pop();
-//         cout<<temp->val<<" ";
-//         if(temp->left != NULL) q.push(temp->left);
-//         if(temp->right != NULL) q.push(temp->right);
-//     }
-//     cout<<endl;
-// }
 
 // int main() {
 //     node* a = new node(1);
@@ -144,8 +136,7 @@
 //     // cout<<endl;
 //     // nthlevelrev(a,1,3);
 //     // cout<<endl;
-//     // levelorder(a);
-//     levelorderqueue(a);
+//     levelorder(a);
 
 // return 0;
 // }
