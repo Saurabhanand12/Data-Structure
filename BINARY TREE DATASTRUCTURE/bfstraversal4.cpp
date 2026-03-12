@@ -41,53 +41,6 @@ node* construct(int arr[] , int n){
     }
     return root;
 }
-void preorder(node* root){           
-    if(root == NULL ) return ;                 
-    cout<<root->val<<" ";
-    preorder(root->left);
-    preorder(root->right);
-}
-void inorder(node* root){
-    if(root == NULL ) return ;
-    inorder(root->left);
-    cout<<root->val<<" ";
-    inorder(root->right);
-}
-void postorder(node* root){
-    if(root == NULL ) return ;
-    postorder(root->left);
-    postorder(root->right); 
-    cout<<root->val<<" ";
-}
-int levels(node* root){
-    if(root == NULL) return 0;
-    return 1 + max(levels(root->left) , levels(root->right));
-}
-void nthlevel(node* root,int curr,int level){
-    if(root == NULL ) return ;
-    if(curr == level){                                    // PRINT SINGLE LEVEL NODE
-        cout<<root->val<<" ";
-        return;
-    }
-    nthlevel(root->left,curr+1,level);
-    nthlevel(root->right,curr+1,level);
-}
-void nthlevelrev(node* root,int curr,int level){
-    if(root == NULL ) return ;
-    if(curr == level){                                   // USE nthlevelrev FOR REVERSE IN nthlevel;
-        cout<<root->val<<" ";
-        return;
-    }
-    nthlevelrev(root->right,curr+1,level);
-    nthlevelrev(root->left,curr+1,level);
-}
-void levelorder(node* root){
-    int n = levels(root);                
-    for(int i=1;i<=n;i++){
-       nthlevel(root,1,i);                           
-        cout<<endl;
-    }
-}
 
 void levelorderqueue(node* root){       // BFS  //VIMP
     queue<node*> q;
@@ -104,18 +57,10 @@ void levelorderqueue(node* root){       // BFS  //VIMP
 
 int main() {
     int arr[] = {1,2,3,4,5,INT_MIN,6,INT_MIN,INT_MIN , 7,8,9};
-    // int arr[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
     int n = sizeof(arr) / sizeof(arr[0]);
     node* root = construct(arr,n);
-
-    // preorder(root);
-    // cout<<endl;
-    // inorder(root);
-    // cout<<endl;
-    // postorder(root);
-    // cout<<endl;
    
-    levelorder(root);
+    levelorderqueue(root);
     cout<<endl;
 
 return 0;
