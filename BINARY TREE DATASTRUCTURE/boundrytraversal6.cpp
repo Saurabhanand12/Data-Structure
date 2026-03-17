@@ -40,26 +40,7 @@
 //     }
 //     return root;
 // }
-// int levels(node* root){
-//     if(root == NULL) return 0;
-//     return 1 + max(levels(root->left) , levels(root->right));
-// }
-// void nthlevel(node* root,int curr,int level){
-//     if(root == NULL ) return ;
-//     if(curr == level){                                    
-//         cout<<root->val<<" ";
-//         return;
-//     }
-//     nthlevel(root->left,curr+1,level);
-//     nthlevel(root->right,curr+1,level);
-// }
-// void levelorder(node* root){
-//     int n = levels(root);                
-//     for(int i=1;i<=n;i++){
-//        nthlevel(root,1,i);                           
-//         cout<<endl;
-//     }
-// }
+
 // void leftboundary(node* root){
 //     if(root == NULL) return;
 //     if(root->left == NULL && root->right == NULL) return;
@@ -86,7 +67,6 @@
 //     int n = sizeof(arr) / sizeof(arr[0]);
 //     node* root = construct(arr,n);
    
-//     // levelorder(root);
 //     leftboundary(root);
 //     bottomboundary(root);
 //     rightboundary(root->right);
