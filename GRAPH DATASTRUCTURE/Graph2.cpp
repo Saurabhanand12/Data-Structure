@@ -1,48 +1,55 @@
-// ///////TRAVERSAL -> DFS /// path is exist of not 
+// // ///////TRAVERSAL -> DFS /// path is exist or not 
 // #include<iostream>
 // #include<vector>
 // #include<list>
-// #include<unordered_set>
+// #include<queue>
+
 // using namespace std;
- 
+
 // vector<list<int>> graph;
-// unordered_set<int> visited;                            ///dfs check visited
-// int v ; // no of vertex;
-// void add_edge(int src,int dest,bool bi_dir = true){
-//     graph[src].push_back(dest);
-//     if(bi_dir){
-//         graph[dest].push_back(src);
-//     }
+// int v;
+
+// void add_edges(int src ,int des, bool bi_dir = true){
+//     graph[src].push_back(des);
+//     if(bi_dir) graph[des].push_back(src);
 // }
-// bool dfs(int curr,int end){
-//     if(curr == end) return true;
-//     visited.insert(curr);            //mark visited
-//     for(auto neighbour : graph[curr]){
-//         if(not visited.count(neighbour)){
-//             bool result = dfs(neighbour,end);
-//             if(result)  return true;
+
+// void dfshelper(int src,vector<bool>& vis){
+//     cout<<src<<" ";
+//     vis[src] = true;
+
+//     for(int neigh : graph[src]){
+//         if(!vis[neigh]){
+//             dfshelper(neigh,vis);
 //         }
 //     }
-//     return false;
 // }
-// bool anypath(int src,int dest){
-//     return dfs(src,dest);
+
+// void dfs(){
+//    int src =0;
+//    vector<bool> vis(graph.size(),false);
+
+//    dfshelper(src,vis);
 // }
-// int main() {
+
+// int main(){
+//     cout<<"Enter vertex : "<<" ";
 //     cin>>v;
-//     graph.resize(v,list<int> ());
+//     graph.resize(v,list<int>());
 //     int e;
+//     cout<<"Enter Edges : "<< " ";
 //     cin>>e;
-//     visited.clear();
+
 //     while(e--){
-//         int s,d;
-//         cin>>s>>d;
-//         add_edge(s,d);
+//         int s , d;
+//         cout<<" Enter Source and Destination : "<<" ";
+//         cin>> s >> d;
+//         add_edges(s,d);
 //     }
-//     int x,y;
-//     cin>>x>>y;
-//     cout<<anypath(x,y)<<endl;
-// return 0;
+
+//     dfs();
+    
+//     return 0;
 // }
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ///////TRAVERSAL -> DFS 
@@ -111,61 +118,60 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////TRAVERSAL -> BFS BREADTH FIRST SEARCH
 // #include<iostream>
+// #include<queue>
 // #include<vector>
 // #include<list>
-// #include<unordered_set>
-// #include<queue>
-// #include<climits>
 // using namespace std;
 
 // vector<list<int>> graph;
-// vector<vector<int>> result;
-// unordered_set<int> visited;
-// int v ; // no of vertex;
-// void add_edge(int src,int dest,bool bi_dir = true){
-//     graph[src].push_back(dest);
-//     if(bi_dir){
-//         graph[dest].push_back(src);
-//     }
+// int v;
+
+// void add_edges(int s,int d,bool bi_dir = true){
+//     graph[s].push_back(d);
+//     if(bi_dir)  graph[d].push_back(s);
 // }
 
-// void bfs(int src,int dest,vector<int>& dist){
-//     queue<int> qu;
-//     visited.clear();
-//     dist.resize(v,INT_MAX);
-//     dist[src] =0;
-//     visited.insert(src);
-//     qu.push(src);
-//     while(not qu.empty()){
-//         int curr = qu.front();
-//         qu.pop();
-//         for(auto neighbour : graph[curr]){
-//             if(not visited.count(neighbour)){
-//                 qu.push(neighbour);
-//                 visited.insert(neighbour);
-//                 dist[neighbour] = dist[curr] +1;
+// void bfs(int src){
+//     int n = graph.size();
+//     queue<int> q;
+//     vector<bool> vis(n,false);
+
+//     q.push(src);
+//     vis[src] = true;
+
+//     while(!q.empty()){
+//         int u = q.front();
+//         q.pop();
+
+//         cout<<u<<" ";
+
+//         for(int neigh : graph[u]){
+//             if(vis[neigh] == false){
+//                 vis[neigh] = true;
+//                 q.push(neigh);
 //             }
 //         }
 //     }
 // }
 
-// int main() {
+// int main(){
+//     cout<<"Enter Vertex : "<<" ";
 //     cin>>v;
-//     graph.resize(v,list<int> ());
+//     graph.resize(v,list<int>());
 //     int e;
+//     cout<<"Enter Edge : "<<" ";
 //     cin>>e;
-//     visited.clear();
 //     while(e--){
 //         int s,d;
-//         cin>>s>>d;
-//         add_edge(s,d);
+//         cout<<"Enter Source and Destination : "<< " ";
+//         cin>> s>> d;
+//         add_edges(s,d);
 //     }
-//     int x,y;
-//     cin>>x>>y;
-//     vector<int> dist;
-//     bfs(x,y,dist);
-//     for(int i=0;i<dist.size();i++){
-//         cout<<dist[i]<<" ";
-//     }
-// return 0;
+//     int src ;
+//     cout<<"Enter Source Value : "<<" ";
+//     cin>> src;
+
+//     bfs(src);
+
+//     return 0;
 // }
